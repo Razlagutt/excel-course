@@ -5,9 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Pure JS Excel App</title>
 </head>
 <body>
-    <div id="app" class="container"></div>
+    <div id="app" class="container">
+        <div class="excel">
+            <div class="excel-header">
+                <input type="text" class="input" value="Новая таблица"/>
+                <div class="button">
+                    <i class="material-icons">delete</i>
+                </div>
+                <div class="button">
+                    <i class="material-icons">exit_to_app</i>
+                </div>
+            </div>
+            <div class="excel-toolbar"></div>
+            <div class="excel-formula"></div>
+            <div class="excel-table"></div>
+        </div>
+    </div>
 </body>
 </html>

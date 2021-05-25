@@ -24,6 +24,9 @@ module.exports = {
             '@core': path.resolve(__dirname, 'src/core')
         }
     },
+    stats: {
+        children: true
+    },
     target: 'web',
     devtool: isDev ? 'source-map' : false,
     devServer: {
