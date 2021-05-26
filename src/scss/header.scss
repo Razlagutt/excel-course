@@ -23,12 +23,16 @@
         line-height: 22;
         outline: none;
 
-        &:focus {
-            border: 2px solid #1a73e8;
-        }
-
         &:hover {
             border: 1px solid $border-color;
         }
+
+        &:focus {
+            border: 2px solid #1a73e8;
+        }
+    }
+
+    .button {
+        @include button(red)
     }
 }

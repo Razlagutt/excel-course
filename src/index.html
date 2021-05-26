@@ -9,20 +9,31 @@
     <title>Pure JS Excel App</title>
 </head>
 <body>
-    <div id="app" class="container">
-        <div class="excel">
-            <div class="excel-header">
-                <input type="text" class="input" value="Новая таблица"/>
-                <div class="button">
-                    <i class="material-icons">delete</i>
-                </div>
-                <div class="button">
-                    <i class="material-icons">exit_to_app</i>
+    <div class="app">
+        <div class="db">
+            <div class="db__header">
+                <h1>Excel Dashboard</h1>
+            </div>
+            <div class="db__new">
+                <div class="db__view">
+                    <a href="#" class="db__create">
+                        Новая <br> таблица
+                    </a>                    
                 </div>
             </div>
-            <div class="excel-toolbar"></div>
-            <div class="excel-formula"></div>
-            <div class="excel-table"></div>
+            <div class="db__table db__view">
+                <div class="db__list-header">
+                    <span>Название</span>
+                    <span>Дата открытия</span>
+                </div>
+
+                <ul class="db__list">
+                    <li class="db__record">
+                        <a href="#">Таблица номер 1</a>
+                        <strong>12.06.2020</strong>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
